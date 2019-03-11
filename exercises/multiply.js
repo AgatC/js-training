@@ -9,7 +9,17 @@
  */
 
 // Your code :
-
+function multiply(a, b) {
+    let resultat = 0;
+    let inverse = a >= 0 ? false : true;
+    if (a < 0) {
+        a = -a;
+    }
+    for (let i = 0; i < a; i++) {
+        resultat += b;
+    }
+    return inverse ? -resultat : resultat;
+}
 //* Begin of tests
 const assert = require('assert')
 
