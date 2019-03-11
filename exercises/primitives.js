@@ -8,8 +8,8 @@
  */
 
 // Your code :
-const str ='13374
-const num ='42'
+const str = '1337'
+const num = 42
 const bool = false
 const undef = undefined
 
