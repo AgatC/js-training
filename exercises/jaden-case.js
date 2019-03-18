@@ -10,10 +10,21 @@
  *
  */
 
-
+function jadenCase(string) {
+    let tab = [];
+    let words = string.split(' ');
+    for (let i = 0; i < words.length; i++) {
+        tab.push(words[i][0].toUpperCase() + words[i].substr(1).toLowerCase());
+    }
+    return tab.join(' ');
+}
 
 //* Begin of tests
+
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof jadenCase, "function")
+assert.strictEqual(jadenCase('How can mirrors be real'), 'How Can Mirrors Be Real')
+
+
 // End of tests */
